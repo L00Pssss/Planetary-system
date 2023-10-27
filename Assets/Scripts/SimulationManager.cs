@@ -10,7 +10,6 @@ public class SimulationManager : MonoBehaviour
     private IEnumerable<IPlanetaryObject> planetaryObjects;
 
     [SerializeField] private GameObject celestialPrefab;
-    [SerializeField] private MaterialCollection materialCollection;
     [SerializeField] private CelestialPositions celestialPositions;
     
     
@@ -28,7 +27,7 @@ public class SimulationManager : MonoBehaviour
             double mass = planet.Mass;
             double radius = planet.Radius;
 
-            
+
             Debug.Log("Planet: MassClass = " + massClass + ", Mass = " + mass + ", Radius = " + radius);
         }
     }
@@ -45,13 +44,13 @@ public class SimulationManager : MonoBehaviour
 
         for (int i = 0; i < objectCount; i++)
         {
-            GameObject newObject = Instantiate(celestialPrefab, celestialPositions.Position[i].transform.position,
-                Quaternion.identity);
-            
             IPlanetaryObject planetaryObject = 
                 planetaryObjects.ElementAt(i); // Предполагается, что planetaryObjects - это IEnumerable
+            
+            GameObject newObject = Instantiate(celestialPrefab, celestialPositions.Position[i].transform.position,
+                Quaternion.identity);
 
-            newObject.GetComponent<Renderer>().material = materialCollection.Material[i];
+            newObject.GetComponent<Renderer>().material = planetaryObject.Material;
             
             
             newObject.GetComponent<Rigidbody>().mass = (float)planetaryObject.Mass;

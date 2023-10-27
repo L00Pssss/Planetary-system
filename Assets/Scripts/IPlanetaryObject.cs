@@ -1,4 +1,6 @@
 
+using UnityEngine;
+
 public enum MassClassEnum
 {
     Asteroidan,
@@ -14,4 +16,5 @@ public interface IPlanetaryObject
     MassClassEnum MassClass { get; }
     double Mass { get; }
     double Radius { get; }
+    Material Material { get; }
 }
