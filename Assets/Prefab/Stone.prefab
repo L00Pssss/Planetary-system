@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 830247356}
   - component: {fileID: 830247357}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 943958417038458183}
   - component: {fileID: 943958417038458184}
   - component: {fileID: 943958417038458179}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Stone
   m_TagString: Celestial
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 59427ff3e7f566f4f82ff098f546a4fd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -311,7 +311,7 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 0.16727555, g: 0.14640442, b: 0.6603774, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 1, g: 1, b: 1, a: 0}
       key3: {r: 1, g: 0.89019614, b: 0, a: 0}
       key4: {r: 1, g: 0.9965301, b: 0.6839622, a: 0}
@@ -319,7 +319,7 @@ TrailRenderer:
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 0
-      ctime1: 34310
+      ctime1: 65535
       ctime2: 65535
       ctime3: 48380
       ctime4: 65535

@@ -5,7 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e1f8c46-40e5-4765-ab32-eec1ba303169" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/CelestialPositions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/CelestialPositions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Planetary-system/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Planetary-system/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CelestialPositions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CelestialPositions.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Sun 1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Sun 1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Sun 2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Sun 2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Sun 3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Sun 3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Sun 4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Sun 4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Sun 5.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Sun 5.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Sun 6.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Sun 6.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Sun 7.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Material/Sun 7.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Stone.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Stone.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SimulationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SimulationManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,14 +36,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/PositonStone.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FDF.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IPlanetaryObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IPlanetarySystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IPlanetarySystemFactory.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlanetSystemManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlanetaryObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlanetarySystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlanetarySystemFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SimulationManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -97,7 +120,7 @@
       <updated>1698307682825</updated>
       <workItem from="1698307684809" duration="3880000" />
       <workItem from="1698312367371" duration="17969000" />
-      <workItem from="1698396851027" duration="11950000" />
+      <workItem from="1698396851027" duration="13414000" />
     </task>
     <servers />
   </component>

@@ -6,11 +6,14 @@ using UnityEngine.Serialization;
 public class SimulationManager : MonoBehaviour
 {
     [SerializeField] private PlanetarySystemFactory planetarySystemFactory;
-    [SerializeField] private GameObject celestialPrefab;
     private IPlanetarySystem planetarySystem;
     private IEnumerable<IPlanetaryObject> planetaryObjects;
 
+    [SerializeField] private GameObject celestialPrefab;
+    [SerializeField] private MaterialCollection materialCollection;
     [SerializeField] private CelestialPositions celestialPositions;
+    
+    
     [SerializeField] private double TotalMass = 1;
     
     private void InitializeSimulation()
@@ -38,20 +41,19 @@ public class SimulationManager : MonoBehaviour
 
     private void SpawnCelestials()
     {
-        int objectCount = celestialPositions.Position.Count; // Предполагая, что positionStone.Position[0] - это количество объектов.
+        int objectCount = celestialPositions.Position.Count;
 
         for (int i = 0; i < objectCount; i++)
         {
-            // Создаем новый объект через Instantiate
             GameObject newObject = Instantiate(celestialPrefab, celestialPositions.Position[i].transform.position,
                 Quaternion.identity);
+            
+            IPlanetaryObject planetaryObject = 
+                planetaryObjects.ElementAt(i); // Предполагается, что planetaryObjects - это IEnumerable
 
-            // Получаем данные о массе и радиусе из planetaryObjects
-            IPlanetaryObject
-                planetaryObject =
-                    planetaryObjects.ElementAt(i); // Предполагается, что planetaryObjects - это IEnumerable
-
-            // Устанавливаем массу новому объекту
+            newObject.GetComponent<Renderer>().material = materialCollection.Material[i];
+            
+            
             newObject.GetComponent<Rigidbody>().mass = (float)planetaryObject.Mass;
 
             // Устанавливаем масштаб новому объекту
