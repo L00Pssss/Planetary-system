@@ -17,4 +17,6 @@ public interface IPlanetaryObject
     double Mass { get; }
     double Radius { get; }
     Material Material { get; }
+    
+    Transform Position { get; }
 }

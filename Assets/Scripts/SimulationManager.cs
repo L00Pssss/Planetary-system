@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class SimulationManager : MonoBehaviour
 {
@@ -10,9 +9,8 @@ public class SimulationManager : MonoBehaviour
     private IEnumerable<IPlanetaryObject> planetaryObjects;
 
     [SerializeField] private GameObject celestialPrefab;
-    [SerializeField] private CelestialPositions celestialPositions;
-    
-    
+
+
     [SerializeField] private double TotalMass = 1;
     
     private void InitializeSimulation()
@@ -21,6 +19,7 @@ public class SimulationManager : MonoBehaviour
 
         planetaryObjects = planetarySystem.PlanetaryObjects;
         
+        // for debug
         foreach (IPlanetaryObject planet in planetaryObjects)
         {
             MassClassEnum massClass = planet.MassClass;
@@ -40,14 +39,12 @@ public class SimulationManager : MonoBehaviour
 
     private void SpawnCelestials()
     {
-        int objectCount = celestialPositions.Position.Count;
-
-        for (int i = 0; i < objectCount; i++)
+        for (int i = 0; i < planetaryObjects.Count(); i++)
         {
             IPlanetaryObject planetaryObject = 
                 planetaryObjects.ElementAt(i); // Предполагается, что planetaryObjects - это IEnumerable
             
-            GameObject newObject = Instantiate(celestialPrefab, celestialPositions.Position[i].transform.position,
+            GameObject newObject = Instantiate(celestialPrefab, planetaryObject.Position.transform.position,
                 Quaternion.identity);
 
             newObject.GetComponent<Renderer>().material = planetaryObject.Material;

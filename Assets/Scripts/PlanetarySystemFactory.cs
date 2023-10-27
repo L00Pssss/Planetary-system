@@ -10,6 +10,7 @@ public class PlanetarySystemFactory : IPlanetarySystemFactory
     [Serializable]
     private class MassClassParameters
     {
+        public Transform position;
         public Material material;
         public MassClassEnum massClassEnum;
         public float maxMass;
@@ -26,7 +27,7 @@ public class PlanetarySystemFactory : IPlanetarySystemFactory
         {
             planets.Add(new PlanetaryObject(massClassParameters[i].massClassEnum,
                 Random.Range(massClassParameters[i].minMass,massClassParameters[i].maxMass),
-                mass * Random.Range(massClassParameters[i].minRadius,massClassParameters[i].maxRadius), massClassParameters[i].material));
+                mass * Random.Range(massClassParameters[i].minRadius,massClassParameters[i].maxRadius), massClassParameters[i].material, massClassParameters[i].position));
         }
         
         IPlanetarySystem system = new PlanetarySystem(planets);
