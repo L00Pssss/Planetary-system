@@ -27,7 +27,9 @@ public class PlanetarySystemFactory : IPlanetarySystemFactory
         {
             planets.Add(new PlanetaryObject(massClassParameters[i].massClassEnum,
                 Random.Range(massClassParameters[i].minMass,massClassParameters[i].maxMass),
-                mass * Random.Range(massClassParameters[i].minRadius,massClassParameters[i].maxRadius), massClassParameters[i].material, massClassParameters[i].position));
+                mass * Random.Range(massClassParameters[i].minRadius,massClassParameters[i].maxRadius),
+                massClassParameters[i].material,
+                massClassParameters[i].position));
         }
         
         IPlanetarySystem system = new PlanetarySystem(planets);

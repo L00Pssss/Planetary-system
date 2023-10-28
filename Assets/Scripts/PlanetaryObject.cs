@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class PlanetaryObject : IPlanetaryObject
@@ -9,14 +8,14 @@ public class PlanetaryObject : IPlanetaryObject
 
     public Material Material { get; }
 
-    public Transform Position { get; }
+    public Transform PositionPointStart { get; }
 
-    public PlanetaryObject(MassClassEnum massClass, double mass, double radius, Material material, Transform position)
+    public PlanetaryObject(MassClassEnum massClass, double mass, double radius, Material material, Transform positionPointStart)
     {
         MassClass = massClass;
         Mass = mass;
         Radius = radius;
         Material = material;
-        Position = position;
+        PositionPointStart = positionPointStart;
     }
 }

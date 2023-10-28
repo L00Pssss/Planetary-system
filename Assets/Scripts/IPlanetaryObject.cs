@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public enum MassClassEnum
@@ -18,5 +17,5 @@ public interface IPlanetaryObject
     double Radius { get; }
     Material Material { get; }
     
-    Transform Position { get; }
+    Transform PositionPointStart { get; }
 }

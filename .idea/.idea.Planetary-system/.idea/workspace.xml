@@ -6,9 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="8e1f8c46-40e5-4765-ab32-eec1ba303169" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Planetary-system/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Planetary-system/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MaterialCollection.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MaterialCollection.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Stone.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Stone.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CelestialPositions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CelestialPositions.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/IPlanetaryObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IPlanetaryObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IPlanetarySystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IPlanetarySystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/IPlanetarySystemFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/IPlanetarySystemFactory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OrbitalSimulation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OrbitalSimulation.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlanetaryObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlanetaryObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlanetarySystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlanetarySystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlanetarySystemFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlanetarySystemFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SimulationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SimulationManager.cs" afterDir="false" />
     </list>
@@ -18,10 +28,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/FDF.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/b3/b297a467/IEnumerable`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IPlanetaryObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IPlanetarySystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/IPlanetarySystemFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/IUpdate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlanetaryObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlanetarySystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlanetarySystemFactory.cs" root0="FORCE_HIGHLIGHTING" />
@@ -102,7 +113,11 @@
       <updated>1698307682825</updated>
       <workItem from="1698307684809" duration="3880000" />
       <workItem from="1698312367371" duration="17969000" />
-      <workItem from="1698396851027" duration="14426000" />
+      <workItem from="1698396851027" duration="15439000" />
+      <workItem from="1698422726680" duration="185000" />
+      <workItem from="1698423289244" duration="595000" />
+      <workItem from="1698434676559" duration="983000" />
+      <workItem from="1698488722944" duration="6366000" />
     </task>
     <servers />
   </component>

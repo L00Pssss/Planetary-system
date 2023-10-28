@@ -9,9 +9,13 @@ public class SimulationManager : MonoBehaviour
     private IEnumerable<IPlanetaryObject> planetaryObjects;
 
     [SerializeField] private GameObject celestialPrefab;
+    [SerializeField] private GameObject sun;
 
 
     [SerializeField] private double TotalMass = 1;
+    
+    private List<GameObject> planetSpawn = new List<GameObject>();
+
     
     private void InitializeSimulation()
     {
@@ -44,8 +48,10 @@ public class SimulationManager : MonoBehaviour
             IPlanetaryObject planetaryObject = 
                 planetaryObjects.ElementAt(i); // Предполагается, что planetaryObjects - это IEnumerable
             
-            GameObject newObject = Instantiate(celestialPrefab, planetaryObject.Position.transform.position,
+            GameObject newObject = Instantiate(celestialPrefab, planetaryObject.PositionPointStart.transform.position,
                 Quaternion.identity);
+            
+            planetSpawn.Add(newObject);
 
             newObject.GetComponent<Renderer>().material = planetaryObject.Material;
             
@@ -56,6 +62,10 @@ public class SimulationManager : MonoBehaviour
             newObject.transform.localScale = new Vector3((float)planetaryObject.Radius, (float)planetaryObject.Radius,
                 (float)planetaryObject.Radius);
         }
+        
+        planetSpawn.Add(sun);
+        planetarySystem.SetPlanetSpawnObjects(planetSpawn);
+
     }
     
     private void FixedUpdate()
